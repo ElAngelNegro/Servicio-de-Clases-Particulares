@@ -1,0 +1,125 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0 80px;
+    margin-top: 56px;
+}
+
+/* Curso Cards */
+.curso-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.curso-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.curso-card .card-header {
+    border-radius: 15px 15px 0 0 !important;
+    border: none;
+}
+
+/* Precio Box */
+.precio-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.precio-box h4 {
+    margin: 5px 0;
+}
+
+/* Packs Container */
+.packs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pack-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    border-left: 4px solid #28a745;
+    transition: background-color 0.2s ease;
+}
+
+.pack-card:hover {
+    background: #e9ecef;
+}
+
+.pack-card:nth-child(2) {
+    border-left-color: #ffc107;
+}
+
+.pack-card:nth-child(3) {
+    border-left-color: #dc3545;
+}
+
+.precio-pack {
+    font-weight: bold;
+    color: #495057;
+    font-size: 1.1rem;
+}
+
+/* Promo Cards */
+.promo-card {
+    border-radius: 15px;
+    border-width: 2px;
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: scale(1.05);
+}
+
+/* Botones */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    margin-top: 0;
+}
+
+.social-links a {
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #667eea !important;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
