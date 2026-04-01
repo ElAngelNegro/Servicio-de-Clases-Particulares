@@ -1,46 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Contacto - AcademiaPro</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Servicios de Reforzamiento</a>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-book-half me-2"></i>AcademiaPro
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
                         <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
                         <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="container py-5">
-            <h1 class="text-center mb-5">Contacto</h1>
+        <section class="page-hero" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); padding: 120px 0 60px; margin-top: 56px; color: white;">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">Contáctanos</h1>
+                <p class="lead mb-4">Estamos aquí para ayudarte. Escríbenos y te responderemos en menos de 24 horas.</p>
+                <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=800&h=300&fit=crop" alt="Contacto" class="img-fluid rounded-4 shadow-lg mt-4" style="opacity: 0.9;">
+            </div>
         </section>
-        <section>
-            
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body p-4 p-md-5">
+                                <h3 class="fw-bold mb-4"><i class="bi bi-envelope-paper-fill me-2 text-primary"></i>Envíanos un mensaje</h3>
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-bold">Nombre</label>
+                                            <input type="text" class="form-control form-control-lg" placeholder="Tu nombre">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-bold">Apellido</label>
+                                            <input type="text" class="form-control form-control-lg" placeholder="Tu apellido">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-bold">Email</label>
+                                            <input type="email" class="form-control form-control-lg" placeholder="tu@email.com">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label fw-bold">Teléfono</label>
+                                            <input type="tel" class="form-control form-control-lg" placeholder="+56 9 1234 5678">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold">Asignatura de interés</label>
+                                            <select class="form-select form-select-lg">
+                                                <option selected>Selecciona una asignatura</option>
+                                                <option>Matemáticas</option>
+                                                <option>Física</option>
+                                                <option>Química</option>
+                                                <option>Lenguaje y Comunicación</option>
+                                                <option>Biología</option>
+                                                <option>Programación</option>
+                                                <option>Otra</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold">Nivel educativo</label>
+                                            <select class="form-select form-select-lg">
+                                                <option selected>Selecciona tu nivel</option>
+                                                <option>Enseñanza Básica</option>
+                                                <option>Enseñanza Media</option>
+                                                <option>Preparación PAES</option>
+                                                <option>Universitario</option>
+                                                <option>Otro</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label fw-bold">Mensaje</label>
+                                            <textarea class="form-control" rows="4" placeholder="Cuéntanos qué necesitas..."></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                                <i class="bi bi-send-fill me-2"></i>Enviar mensaje
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="card border-0 shadow-lg mb-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold mb-4"><i class="bi bi-info-circle-fill me-2"></i>Información de Contacto</h4>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3 d-flex align-items-start">
+                                        <i class="bi bi-geo-alt-fill fs-5 me-3 mt-1"></i>
+                                        <div>
+                                            <strong>Dirección</strong><br>
+                                            <span>Av. Apoquindo 1234, Oficina 501<br>Las Condes, Santiago, Chile</span>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-start">
+                                        <i class="bi bi-telephone-fill fs-5 me-3 mt-1"></i>
+                                        <div>
+                                            <strong>Teléfono</strong><br>
+                                            <span>+56 9 1234 5678</span>
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 d-flex align-items-start">
+                                        <i class="bi bi-envelope-fill fs-5 me-3 mt-1"></i>
+                                        <div>
+                                            <strong>Email</strong><br>
+                                            <span>contacto@academiapro.cl</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-start">
+                                        <i class="bi bi-clock-fill fs-5 me-3 mt-1"></i>
+                                        <div>
+                                            <strong>Horario de atención</strong><br>
+                                            <span>Lunes a Viernes: 9:00 - 20:00<br>Sábados: 10:00 - 14:00</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-3"><i class="bi bi-share-fill me-2 text-primary"></i>Síguenos</h5>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="btn btn-outline-primary rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-facebook fs-5"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-instagram fs-5"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-success rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-whatsapp fs-5"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-dark rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-youtube fs-5"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-lg mt-4 bg-light">
+                            <div class="card-body p-4 text-center">
+                                <i class="bi bi-lightning-charge-fill text-warning fs-1 mb-3"></i>
+                                <h5 class="fw-bold">Respuesta rápida</h5>
+                                <p class="text-muted mb-0">Te respondemos en menos de 24 horas. ¡Consulta sin compromiso!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-5">
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+                            <h5 class="fw-bold">Soporte Personalizado</h5>
+                            <p class="text-muted mb-0">Atención dedicada para resolver todas tus dudas sobre cursos y horarios.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <i class="bi bi-calendar-check fs-1 text-success mb-3"></i>
+                            <h5 class="fw-bold">Agenda Flexible</h5>
+                            <p class="text-muted mb-0">Horarios adaptados a tu disponibilidad. Clases de lunes a sábado.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm h-100 text-center p-4">
+                            <i class="bi bi-shield-check fs-1 text-info mb-3"></i>
+                            <h5 class="fw-bold">Garantía de Calidad</h5>
+                            <p class="text-muted mb-0">Primera clase de prueba. Si no te gusta, no pagas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="bg-dark text-white py-5">
         <div class="container">
-            <p>&copy; 2025 Servicios de Reforzamiento. Todos los derechos reservados.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-book-half me-2"></i>AcademiaPro</h5>
+                    <p class="text-muted">Servicios de reforzamiento académico personalizado para estudiantes de todos los niveles.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="bi bi-telephone me-2"></i>+56 9 1234 5678</li>
+                        <li><i class="bi bi-envelope me-2"></i>contacto@academiapro.cl</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Inicio</a></li>
+                        <li><a href="cursos.html" class="text-decoration-none text-muted">Cursos</a></li>
+                        <li><a href="contacto.html" class="text-decoration-none text-muted">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2025 AcademiaPro. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

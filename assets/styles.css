@@ -123,3 +123,455 @@ html {
         font-size: 2rem;
     }
 }
+
+/* ==================== ANIMACIONES ==================== */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Slide In Left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-left {
+    animation: slideInLeft 0.6s ease-out forwards;
+}
+
+/* Slide In Right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-right {
+    animation: slideInRight 0.6s ease-out forwards;
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Float Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* ==================== PÁGINA CURSOS ==================== */
+
+/* Curso Detalle Layout */
+.curso-detalle {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.curso-detalle:nth-child(1) { animation-delay: 0.1s; }
+.curso-detalle:nth-child(2) { animation-delay: 0.2s; }
+.curso-detalle:nth-child(3) { animation-delay: 0.3s; }
+.curso-detalle:nth-child(4) { animation-delay: 0.4s; }
+.curso-detalle:nth-child(5) { animation-delay: 0.5s; }
+.curso-detalle:nth-child(6) { animation-delay: 0.6s; }
+
+/* Curso Imagen Container */
+.curso-imagen-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.curso-imagen-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.curso-imagen-container img {
+    transition: transform 0.5s ease;
+}
+
+.curso-imagen-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Curso Overlay */
+.curso-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102,126,234,0.8) 0%, rgba(118,75,162,0.8) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    color: white;
+}
+
+.curso-imagen-container:hover .curso-overlay {
+    opacity: 1;
+}
+
+/* Curso Info Card */
+.curso-info {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* ==================== PÁGINA PRECIOS ==================== */
+
+/* Precio Card */
+.precio-card {
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+}
+
+.precio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+}
+
+.precio-card .card-header {
+    border-radius: 20px 20px 0 0 !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Table Animations */
+.table tbody tr {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+}
+
+/* ==================== PÁGINA PROMOCIONES ==================== */
+
+/* Promocion Card */
+.promocion-card {
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.promocion-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
+}
+
+.promocion-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.promocion-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Badge Promo Animation */
+.badge-promo .badge {
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ==================== PÁGINA CONTACTO ==================== */
+
+/* Form Card */
+.card .form-control,
+.card .form-select {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .form-control:focus,
+.card .form-select:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102,126,234,0.25);
+}
+
+/* Social Buttons Animation */
+.btn.rounded-circle {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.rounded-circle:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Info Card Gradient Animation */
+.card[style*="linear-gradient"] {
+    position: relative;
+    overflow: hidden;
+}
+
+.card[style*="linear-gradient"]::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255,255,255,0.1) 50%,
+        transparent 70%
+    );
+    transform: rotate(45deg);
+    transition: transform 0.6s ease;
+}
+
+.card[style*="linear-gradient"]:hover::before {
+    transform: rotate(45deg) translate(50%, 50%);
+}
+
+/* ==================== PAGE HERO ==================== */
+.page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.page-hero img {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ==================== SCROLL ANIMATIONS ==================== */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==================== HOVER EFFECTS ==================== */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* ==================== LOADING ANIMATION ==================== */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.loading {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 1000px 100%;
+}
+
+/* ==================== BUTTON ANIMATIONS ==================== */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease, height 0.4s ease;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* Ripple Effect */
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple 0.6s ease-out;
+}
+
+/* ==================== STAGGER ANIMATIONS ==================== */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* ==================== GRADIENT TEXT ==================== */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ==================== GLASS EFFECT ==================== */
+.glass {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ==================== ROTATE ON HOVER ==================== */
+.rotate-hover {
+    transition: transform 0.4s ease;
+}
+
+.rotate-hover:hover {
+    transform: rotate(5deg);
+}
+
+/* ==================== BOUNCE ANIMATION ==================== */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 1s ease infinite;
+}
+
+/* ==================== SHAKE ANIMATION ==================== */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.animate-shake:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* ==================== GLOW EFFECT ==================== */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(102,126,234,0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(102,126,234,0.8), 0 0 40px rgba(102,126,234,0.4);
+    }
+}
+
+.animate-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+

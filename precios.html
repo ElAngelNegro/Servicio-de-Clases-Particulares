@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precios</title>
+    <title>Precios - AcademiaPro</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Servicios de Reforzamiento</a>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-book-half me-2"></i>AcademiaPro
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="precios.html">Precios</a></li>
                         <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
@@ -28,16 +30,232 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="container">
-            <h1>Precios</h1>
-        </div>
 
+    <main>
+        <section class="page-hero" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); padding: 120px 0 60px; margin-top: 56px; color: white;">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">Tabla de Precios</h1>
+                <p class="lead mb-4">Planes flexibles adaptados a tus necesidades y presupuesto</p>
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=300&fit=crop" alt="Precios" class="img-fluid rounded-4 shadow-lg mt-4" style="opacity: 0.9;">
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Precios por Hora</h2>
+                    <p class="text-muted">Valor de referencia para clases individuales por asignatura</p>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="card precio-card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-primary text-white text-center py-4">
+                                <i class="bi bi-calculator fs-2 mb-2"></i>
+                                <h5 class="mb-0">Matemáticas</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold text-primary">$35.000</h3>
+                                <p class="text-muted">CLP / hora</p>
+                                <ul class="list-unstyled text-start mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i>Clase personalizada</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Material incluido</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Ejercicios prácticos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card precio-card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-success text-white text-center py-4">
+                                <i class="bi bi-atom fs-2 mb-2"></i>
+                                <h5 class="mb-0">Física</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold text-success">$38.000</h3>
+                                <p class="text-muted">CLP / hora</p>
+                                <ul class="list-unstyled text-start mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i>Clase personalizada</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Simulaciones incluidas</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Laboratorio virtual</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card precio-card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-info text-white text-center py-4">
+                                <i class="bi bi-droplet-half fs-2 mb-2"></i>
+                                <h5 class="mb-0">Química</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold text-info">$36.000</h3>
+                                <p class="text-muted">CLP / hora</p>
+                                <ul class="list-unstyled text-start mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i>Clase personalizada</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Modelos moleculares 3D</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Guías de ejercicios</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="card precio-card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-warning text-dark text-center py-4">
+                                <i class="bi bi-journal-text fs-2 mb-2"></i>
+                                <h5 class="mb-0">Lenguaje</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold text-warning">$32.000</h3>
+                                <p class="text-muted">CLP / hora</p>
+                                <ul class="list-unstyled text-start mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i>Clase personalizada</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Lecturas guiadas</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Corrección de ensayos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card precio-card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-secondary text-white text-center py-4">
+                                <i class="bi bi-flower1 fs-2 mb-2"></i>
+                                <h5 class="mb-0">Biología</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold text-secondary">$34.000</h3>
+                                <p class="text-muted">CLP / hora</p>
+                                <ul class="list-unstyled text-start mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i>Clase personalizada</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Material audiovisual</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Videos educativos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card precio-card h-100 border-0 shadow-sm">
+                            <div class="card-header text-white text-center py-4" style="background-color: #fd7e14;">
+                                <i class="bi bi-code-slash fs-2 mb-2"></i>
+                                <h5 class="mb-0">Programación</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="fw-bold" style="color: #fd7e14;">$40.000</h3>
+                                <p class="text-muted">CLP / hora</p>
+                                <ul class="list-unstyled text-start mt-3">
+                                    <li><i class="bi bi-check text-success me-2"></i>Clase personalizada</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Proyectos prácticos</li>
+                                    <li><i class="bi bi-check text-success me-2"></i>Acceso a recursos</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla de Packs -->
+                <div class="text-center mb-5 mt-5">
+                    <h2 class="fw-bold">Packs de Horas</h2>
+                    <p class="text-muted">Ahorra inscribiéndote en packs de horas</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Asignatura</th>
+                                <th class="text-center">Pack Básico<br><small class="text-muted">4 horas</small></th>
+                                <th class="text-center">Pack Avanzado<br><small class="text-muted">8 horas</small></th>
+                                <th class="text-center">Pack Intensivo<br><small class="text-muted">12 horas</small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="bi bi-calculator text-primary me-2"></i>Matemáticas</td>
+                                <td class="text-center fw-bold">$120.000</td>
+                                <td class="text-center fw-bold text-success">$220.000 <small class="text-muted">(-21%)</small></td>
+                                <td class="text-center fw-bold text-success">$300.000 <small class="text-muted">(-29%)</small></td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-atom text-success me-2"></i>Física</td>
+                                <td class="text-center fw-bold">$130.000</td>
+                                <td class="text-center fw-bold text-success">$240.000 <small class="text-muted">(-21%)</small></td>
+                                <td class="text-center fw-bold text-success">$330.000 <small class="text-muted">(-28%)</small></td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-droplet-half text-info me-2"></i>Química</td>
+                                <td class="text-center fw-bold">$125.000</td>
+                                <td class="text-center fw-bold text-success">$230.000 <small class="text-muted">(-20%)</small></td>
+                                <td class="text-center fw-bold text-success">$320.000 <small class="text-muted">(-26%)</small></td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-journal-text text-warning me-2"></i>Lenguaje</td>
+                                <td class="text-center fw-bold">$110.000</td>
+                                <td class="text-center fw-bold text-success">$200.000 <small class="text-muted">(-22%)</small></td>
+                                <td class="text-center fw-bold text-success">$280.000 <small class="text-muted">(-27%)</small></td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-flower1 text-secondary me-2"></i>Biología</td>
+                                <td class="text-center fw-bold">$115.000</td>
+                                <td class="text-center fw-bold text-success">$210.000 <small class="text-muted">(-23%)</small></td>
+                                <td class="text-center fw-bold text-success">$290.000 <small class="text-muted">(-29%)</small></td>
+                            </tr>
+                            <tr>
+                                <td><i class="bi bi-code-slash me-2" style="color: #fd7e14;"></i>Programación</td>
+                                <td class="text-center fw-bold">$135.000</td>
+                                <td class="text-center fw-bold text-success">$250.000 <small class="text-muted">(-22%)</small></td>
+                                <td class="text-center fw-bold text-success">$350.000 <small class="text-muted">(-27%)</small></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="alert alert-info mt-4">
+                    <i class="bi bi-info-circle-fill me-2"></i>
+                    <strong>Nota:</strong> Los packs de horas incluyen material de estudio, acceso a recursos online y simulacros de pruebas según el plan seleccionado.
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="contacto.html" class="btn btn-primary btn-lg px-5">
+                        <i class="bi bi-calendar-check me-2"></i>Agendar mi Primera Clase
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+
+    <footer class="bg-dark text-white py-5">
         <div class="container">
-            <p>&copy; 2025 Servicios de Reforzamiento. Todos los derechos reservados.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-book-half me-2"></i>AcademiaPro</h5>
+                    <p class="text-muted">Servicios de reforzamiento académico personalizado para estudiantes de todos los niveles.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="bi bi-telephone me-2"></i>+56 9 1234 5678</li>
+                        <li><i class="bi bi-envelope me-2"></i>contacto@academiapro.cl</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Inicio</a></li>
+                        <li><a href="cursos.html" class="text-decoration-none text-muted">Cursos</a></li>
+                        <li><a href="contacto.html" class="text-decoration-none text-muted">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2025 AcademiaPro. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,46 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promociones</title>
+    <title>Promociones - AcademiaPro</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">Servicios de Reforzamiento</a>
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-book-half me-2"></i>AcademiaPro
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
                         <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="promociones.html">Promociones</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="container py-5">
-            <h1 class="text-center mb-5">Promociones</h1>
+        <section class="page-hero" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 120px 0 60px; margin-top: 56px; color: white;">
+            <div class="container text-center">
+                <h1 class="display-4 fw-bold mb-3">Promociones Especiales</h1>
+                <p class="lead mb-4">Aprovecha nuestros descuentos exclusivos y ahorra en tu reforzamiento académico</p>
+                <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&h=300&fit=crop" alt="Promociones" class="img-fluid rounded-4 shadow-lg mt-4" style="opacity: 0.9;">
+            </div>
         </section>
-        <section>
-            
+
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Promociones Activas</h2>
+                    <p class="text-muted">Válidas hasta nuevo aviso. No acumulables con otras ofertas.</p>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card promocion-card h-100 border-0 shadow-lg overflow-hidden">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop" class="card-img-top" alt="Dúo Perfecto">
+                                <div class="badge-promo position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-danger fs-5">20% OFF</span>
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-people-fill text-primary fs-1 mb-3"></i>
+                                <h4 class="fw-bold mb-3">Dúo Perfecto</h4>
+                                <p class="text-muted mb-4">Inscríbete con un amigo y ambos obtienen 20% de descuento en cualquier pack de cursos.</p>
+                                <ul class="list-unstyled text-start mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Válido para todos los cursos</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Aplica en packs de 4, 8 y 12 horas</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Deben inscribirse juntos</li>
+                                </ul>
+                                <h5 class="text-primary fw-bold">Ahorro: Hasta $70.000 CLP</h5>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                                <a href="contacto.html" class="btn btn-primary w-75">Aprovechar Oferta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card promocion-card h-100 border-0 shadow-lg overflow-hidden">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1544717305-2782549b35e3?w=400&h=250&fit=crop" class="card-img-top" alt="Pack Familiar">
+                                <div class="badge-promo position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-success fs-5">25% OFF</span>
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-house-heart-fill text-success fs-1 mb-3"></i>
+                                <h4 class="fw-bold mb-3">Pack Familiar</h4>
+                                <p class="text-muted mb-4">2 o más hermanos inscritos obtienen 25% de descuento cada uno en sus cursos.</p>
+                                <ul class="list-unstyled text-start mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Válido para familiares directos</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cada hermano puede elegir curso diferente</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Descuento aplicado mensualmente</li>
+                                </ul>
+                                <h5 class="text-success fw-bold">Ahorro: Hasta $100.000 CLP/mes</h5>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                                <a href="contacto.html" class="btn btn-success w-75">Aprovechar Oferta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card promocion-card h-100 border-0 shadow-lg overflow-hidden">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" class="card-img-top" alt="Full Semestre">
+                                <div class="badge-promo position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-warning text-dark fs-5">30% OFF</span>
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-calendar-check-fill text-warning fs-1 mb-3"></i>
+                                <h4 class="fw-bold mb-3">Full Semestre</h4>
+                                <p class="text-muted mb-4">Pago anticipado de 3 meses de clases y obtén el 30% de descuento en el total.</p>
+                                <ul class="list-unstyled text-start mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Pago único por 3 meses</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Agenda fija garantizada</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Material completo incluido</li>
+                                </ul>
+                                <h5 class="text-warning fw-bold">Ahorro: Hasta $300.000 CLP</h5>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                                <a href="contacto.html" class="btn btn-warning w-75 text-dark">Aprovechar Oferta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card promocion-card h-100 border-0 shadow-lg overflow-hidden">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400&h=250&fit=crop" class="card-img-top" alt="Referido">
+                                <div class="badge-promo position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-info fs-5">1 CLASE FREE</span>
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-gift-fill text-info fs-1 mb-3"></i>
+                                <h4 class="fw-bold mb-3">Trae un Amigo</h4>
+                                <p class="text-muted mb-4">Por cada amigo que se inscriba, recibes 1 clase gratis en la asignatura que prefieras.</p>
+                                <ul class="list-unstyled text-start mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sin límite de referidos</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Clases acumulables</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Amigo debe completar 4 clases</li>
+                                </ul>
+                                <h5 class="text-info fw-bold">Ahorro: 1 clase = $35.000 CLP</h5>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                                <a href="contacto.html" class="btn btn-info w-75 text-white">Aprovechar Oferta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card promocion-card h-100 border-0 shadow-lg overflow-hidden">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop" class="card-img-top" alt="PAES">
+                                <div class="badge-promo position-absolute top-0 end-0 m-3">
+                                    <span class="badge bg-secondary fs-5">PAES 2025</span>
+                                </div>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-mortarboard-fill text-secondary fs-1 mb-3"></i>
+                                <h4 class="fw-bold mb-3">Prepárate PAES</h4>
+                                <p class="text-muted mb-4">Pack especial de preparación para la PAES con 35% de descuento en inscripción temprana.</p>
+                                <ul class="list-unstyled text-start mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Matemáticas, Lenguaje, Historia</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>20 horas + 5 simulacros PAES</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Material oficial incluido</li>
+                                </ul>
+                                <h5 class="text-secondary fw-bold">Precio Especial: $450.000 CLP</h5>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 text-center pb-4">
+                                <a href="contacto.html" class="btn btn-secondary w-75">Aprovechar Oferta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 p-4 bg-light rounded-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h4 class="fw-bold mb-2"><i class="bi bi-lightning-charge-fill text-warning me-2"></i>Promoción Flash del Mes</h4>
+                            <p class="text-muted mb-0">Inscríbete esta semana y obtén un 15% de descuento adicional en tu primera compra + acceso gratuito a nuestro portal de ejercicios por 1 mes.</p>
+                        </div>
+                        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                            <a href="contacto.html" class="btn btn-outline-dark btn-lg">Ver Términos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="bg-dark text-white py-5">
         <div class="container">
-            <p>&copy; 2025 Servicios de Reforzamiento. Todos los derechos reservados.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3"><i class="bi bi-book-half me-2"></i>AcademiaPro</h5>
+                    <p class="text-muted">Servicios de reforzamiento académico personalizado para estudiantes de todos los niveles.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="bi bi-telephone me-2"></i>+56 9 1234 5678</li>
+                        <li><i class="bi bi-envelope me-2"></i>contacto@academiapro.cl</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none text-muted">Inicio</a></li>
+                        <li><a href="cursos.html" class="text-decoration-none text-muted">Cursos</a></li>
+                        <li><a href="contacto.html" class="text-decoration-none text-muted">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2025 AcademiaPro. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
